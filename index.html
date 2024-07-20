@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #content{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: beige;
+        }
+        .box{
+            height: 600px;
+            width: 500px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .task{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .btn{
+            height: 100%;
+            width: 100px;
+            border-radius: 20px;
+            border:none;
+            background-color: blue;
+        }
+        input{
+            height:100%;
+            width:300px;
+            border-radius: 20px;
+        }
+        .taskcontainer{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+    </style>
+</head>
+<body>
+    <section id = "content">
+        <div class = "box">
+            <div style="width: 90%;">
+                <div class="task" id="addtask"><div><input id="taskval" name="taskval" type="text"></div><div><button class="btn" type="button" onclick="addtask()">Add</button></div></div>
+            </div>
+            <div style="width: 90%;" class = "taskcontainer" id = "tasks">
+
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
